@@ -1,5 +1,5 @@
+// 🌗 Dark/Light Mode Toggle
 window.addEventListener("DOMContentLoaded", () => {
-  // 🌗 Dark/Light Mode Toggle
   const toggle = document.getElementById("themeToggle");
   if (toggle) {
     toggle.addEventListener("click", () => {
@@ -20,15 +20,14 @@ window.addEventListener("DOMContentLoaded", () => {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      // Optional: Add title input to pass into the template if needed
       const formData = new FormData(contactForm);
       formData.append("title", "New Portfolio Message ✨");
 
       emailjs.sendForm(
-        'service_byd0d06',       // ✅ Your EmailJS Service ID
-        'template_uvjI5eh',      // ✅ Your EmailJS Template ID
+        'service_byd0d06',
+        'template_uvjI5eh',
         formData,
-        '8RTw1wSThhHnZvvUp'      // ✅ Your EmailJS Public Key
+        '8RTw1wSThhHnZvvUp'
       ).then(
         function () {
           alert("Message sent successfully! 🎉");
@@ -41,10 +40,10 @@ window.addEventListener("DOMContentLoaded", () => {
       );
     });
   }
+});
 
-  // ⏳ Loader Hide
-  window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
-    if (loader) loader.style.display = "none";
-  });
+// ⏳ Loader Hide – keep this **outside** the DOMContentLoaded
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  if (loader) loader.style.display = "none";
 });
