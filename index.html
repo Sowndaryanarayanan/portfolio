@@ -1,0 +1,275 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sowndarya | MERN Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Load EmailJS SDK v3 -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      // Init EmailJS with your public key
+      emailjs.init("8RTw1wSThhHnZvvUp");
+
+      const form = document.getElementById("contact-form");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_byd0d06", "template_a4t8zof", this)
+          .then(() => {
+            alert("Message sent successfully! 🎉");
+            form.reset();
+          }, (err) => {
+            console.error("FAILED...", err);
+            alert("Oops! Something went wrong 😢");
+          });
+      });
+
+      // Loader hide
+      const loader = document.querySelector(".loader");
+      if (loader) loader.style.display = "none";
+    });
+  </script>
+</head>
+<body>
+  <div class="loader"></div>
+
+  <nav>
+    <div class="logo">Sowndarya</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button id="themeToggle">🌞/🌙</button>
+  </nav>
+
+  <section id="home" class="section home-content">
+    <div>
+      <h1>Hey there 👋 I'm Sowndarya</h1>
+      <p>Full Stack MERN Developer 💻</p>
+      <p>Fresher - B.Tech IT | Dhirajlal Gandhi College of Technology</p>
+    </div>
+    <img src="assets/lap.jpg" alt="Profile Picture" class="profile-pic"/>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p class="about-text">I’m Sowndarya — a MERN stack developer with strong roots in Python, DSA, and problem-solving 💡.  
+    While my core domain is web development, I'm open to exploring any tech horizon 🌍.  
+    I aim to contribute, grow, and become a valuable asset to any organization I step into 🤝.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">DSA - 75%</div>
+      <div class="skill">MERN Stack</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Student Registration MERN App</h3>
+        <p>A web app where students can submit details stored in MongoDB.</p>
+        <a href="#">GitHub 🔗</a>
+      </div>
+      <div class="project-card">
+        <h3>To-Do App MERN Stack</h3>
+        <p>Create, update, delete tasks. Clean UI and responsive design.</p>
+        <a href="#">GitHub 🔗</a>
+      </div>
+      <div class="project-card">
+        <h3>AI/ML News Fetcher</h3>
+        <p>Top 10 trending news from The Hindu using NLP & scraping.</p>
+        <a href="#">GitHub 🔗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="edu-block">
+      <h3>Dhirajlal Gandhi College of Technology 🎓</h3>
+      <p>B.Tech - Information Technology | CGPA: 8.9/10</p>
+    </div>
+    <div class="edu-block">
+      <h3>Dawn Matriculation Higher Secondary School 🏫</h3>
+      <p>91.5%</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Sowndarya | Built with ❤️
+  </footer>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sowndarya | MERN Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Load EmailJS SDK v3 -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      // Init EmailJS with your public key
+      emailjs.init("8RTw1wSThhHnZvvUp");
+
+      const form = document.getElementById("contact-form");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_byd0d06", "template_a4t8zof", this)
+          .then(() => {
+            alert("Message sent successfully! 🎉");
+            form.reset();
+          }, (err) => {
+            console.error("FAILED...", err);
+            alert("Oops! Something went wrong 😢");
+          });
+      });
+
+      // Loader hide
+      const loader = document.querySelector(".loader");
+      if (loader) loader.style.display = "none";
+    });
+  </script>
+</head>
+<body>
+  <div class="loader"></div>
+
+  <nav>
+    <div class="logo">Sowndarya</div>
+   
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+    <button id="themeToggle">🌞/🌙</button>
+  </nav>
+
+  <section id="home" class="section home-content">
+    <div>
+      <h1>Hey there 👋 I'm Sowndarya</h1>
+      <p>Full Stack MERN Developer 💻</p>
+      <p>Fresher - B.Tech IT | Dhirajlal Gandhi College of Technology</p>
+    </div>
+    <img src="assets/lap.jpg" alt="Profile Picture" class="profile-pic"/>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p class="about-text">I’m Sowndarya — a MERN stack developer with strong roots in Python, DSA, and problem-solving 💡.  
+    While my core domain is web development, I'm open to exploring any tech horizon 🌍.  
+    I aim to contribute, grow, and become a valuable asset to any organization I step into 🤝.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">DSA - 75%</div>
+      <div class="skill">MERN Stack</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Student Registration MERN App</h3>
+        <p>A web app where students can submit details stored in MongoDB.</p>
+        <a href="https://github.com/Sowndaryanarayanan/Springboot">GitHub 🔗</a>
+      </div>
+      <div class="project-card">
+        <h3>To-Do App MERN Stack</h3>
+        <p>Create, update, delete tasks. Clean UI and responsive design.</p>
+        <a href="#">GitHub 🔗</a>
+      </div>
+      <div class="project-card">
+        <h3>AI/ML News Fetcher</h3>
+        <p>Top 10 trending news from The Hindu using NLP & scraping.</p>
+        <a href="https://github.com/Sowndaryanarayanan/daily_news_weather_digest">GitHub 🔗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="edu-block">
+      <h3>Dhirajlal Gandhi College of Technology 🎓</h3>
+      <p>B.Tech - Information Technology | CGPA: 8.9/10</p>
+    </div>
+    <div class="edu-block">
+      <h3>Dawn Matriculation Higher Secondary School 🏫</h3>
+      <p>91.5%</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+   <div class="social-icons" style="display: flex; gap: 20px; align-items: center;">
+  <a href="https://www.linkedin.com/in/sowndarya-narayanan-7b092b2a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin fa-2x" style="color: #0A66C2;"></i>
+  </a>
+  <a href="https://github.com/Sowndaryanarayanan" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github fa-2x" style="color: #171515;"></i>
+  </a>
+</div>
+
+  <footer>
+    © 2025 Sowndarya | Built with ❤️
+  </footer>
+</body>
+</html>
+>>>>>>> 0bc03e4 (Updated styles and icons)
